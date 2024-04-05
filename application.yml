@@ -9,9 +9,11 @@ eureka:
     
     
 microservice:
-  PaymentService:
+  payment-service:
+    endpoints:
       endpoint:
-        uri: http://Payment-Service/payment/doPayment
-  OrderService:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
+  order-service:
+    endpoints:
       endpoint:
-        uri: http://Order-Service/order/bookOrder    
+        uri: http://ORDER-SERVICE/order/bookOrder   
